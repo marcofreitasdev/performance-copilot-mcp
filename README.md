@@ -47,28 +47,6 @@ The server communicates exclusively over **stdio**, routing all diagnostic outpu
 
 The solution consists of six .NET projects organized in a layered architecture. The `McpServer` project is the only process boundary; all other projects are class libraries referenced by the application layer.
 
-```
-+--------------------------------------------------+
-|               AI Agent / LLM                     |
-|       (VS Code Copilot, Claude Desktop)          |
-+--------------------+-----------------------------+
-                     | MCP Protocol (stdio)
-+--------------------v-----------------------------+
-|          PerformanceCopilot.McpServer            |
-|   Tools  |  Security Guards  |  DI Host          |
-+-----+----------+----------+----------+----------+
-      |          |          |          |
-+-----v--+ +-----v--+ +-----v--+ +-----v--+
-|Analysis| |Benchmk.| |Reportg.| |Storage |
-|(Roslyn)| |(BDN)   | |(MD/JSON| |(JSON FS|
-+--------+ +--------+ +--------+ +--------+
-      |          |          |          |
-+--------------------------------------------------+
-|           PerformanceCopilot.Application         |
-|           Use Cases  |  Contracts  |  Services   |
-+--------------------------------------------------+
-```
-
 ```mermaid
 graph TD
     A[AI Agent] -->|stdio / MCP| B[McpServer]
