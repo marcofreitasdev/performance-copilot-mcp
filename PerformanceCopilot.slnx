@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PerformanceCopilot.Analysis/PerformanceCopilot.Analysis.csproj" />
+    <Project Path="src/PerformanceCopilot.Application/PerformanceCopilot.Application.csproj" />
+    <Project Path="src/PerformanceCopilot.Benchmarking/PerformanceCopilot.Benchmarking.csproj" />
+    <Project Path="src/PerformanceCopilot.McpServer/PerformanceCopilot.McpServer.csproj" />
+    <Project Path="src/PerformanceCopilot.Reporting/PerformanceCopilot.Reporting.csproj" />
+    <Project Path="src/PerformanceCopilot.Storage/PerformanceCopilot.Storage.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PerformanceCopilot.Analysis.Tests/PerformanceCopilot.Analysis.Tests.csproj" />
+    <Project Path="tests/PerformanceCopilot.Application.Tests/PerformanceCopilot.Application.Tests.csproj" />
+  </Folder>
+</Solution>

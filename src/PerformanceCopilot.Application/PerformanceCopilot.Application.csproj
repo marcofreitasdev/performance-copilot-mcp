@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\PerformanceCopilot.Analysis\PerformanceCopilot.Analysis.csproj" />
+    <ProjectReference Include="..\PerformanceCopilot.Benchmarking\PerformanceCopilot.Benchmarking.csproj" />
+    <ProjectReference Include="..\PerformanceCopilot.Reporting\PerformanceCopilot.Reporting.csproj" />
+    <ProjectReference Include="..\PerformanceCopilot.Storage\PerformanceCopilot.Storage.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

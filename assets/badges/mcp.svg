@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="20" viewBox="0 0 96 20" role="img" aria-label="MCP SDK: 1.3.0">
+  <title>MCP SDK: 1.3.0</title>
+  <defs>
+    <clipPath id="r-mcp">
+      <rect width="96" height="20" rx="3" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="depth-mcp" x2="0" y2="100%">
+      <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+      <stop offset="1" stop-opacity=".1"/>
+    </linearGradient>
+    <linearGradient id="sg-mcp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#fff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      @keyframes shimmerMCP { 0% { transform: translateX(0); } 100% { transform: translateX(192px); } }
+      .sMCP { animation: shimmerMCP 3s linear infinite; animation-delay: 0.6s; }
+    </style>
+  </defs>
+  <g clip-path="url(#r-mcp)">
+    <rect width="54"  height="20" fill="#555"/>
+    <rect x="54" width="42" height="20" fill="#6d28d9"/>
+    <rect width="96"  height="20" fill="url(#depth-mcp)"/>
+    <rect class="sMCP" x="-96" width="96" height="20" fill="url(#sg-mcp)"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+    <text x="27"  y="15" fill="#010101" fill-opacity=".25">MCP SDK</text>
+    <text x="27"  y="14">MCP SDK</text>
+    <text x="75"  y="15" fill="#010101" fill-opacity=".25">1.3.0</text>
+    <text x="75"  y="14">1.3.0</text>
+  </g>
+</svg>

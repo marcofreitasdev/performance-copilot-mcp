@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="102" height="20" viewBox="0 0 102 20" role="img" aria-label="benchmarks: BDN">
+  <title>benchmarks: BDN</title>
+  <defs>
+    <clipPath id="r-bdn">
+      <rect width="102" height="20" rx="3" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="depth-bdn" x2="0" y2="100%">
+      <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+      <stop offset="1" stop-opacity=".1"/>
+    </linearGradient>
+    <linearGradient id="sg-bdn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#fff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      @keyframes shimmerBDN { 0% { transform: translateX(0); } 100% { transform: translateX(204px); } }
+      .sBDN { animation: shimmerBDN 3s linear infinite; animation-delay: 1.2s; }
+    </style>
+  </defs>
+  <g clip-path="url(#r-bdn)">
+    <rect width="72"  height="20" fill="#555"/>
+    <rect x="72" width="30" height="20" fill="#dd4b39"/>
+    <rect width="102" height="20" fill="url(#depth-bdn)"/>
+    <rect class="sBDN" x="-102" width="102" height="20" fill="url(#sg-bdn)"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+    <text x="36"  y="15" fill="#010101" fill-opacity=".25">benchmarks</text>
+    <text x="36"  y="14">benchmarks</text>
+    <text x="87"  y="15" fill="#010101" fill-opacity=".25">BDN</text>
+    <text x="87"  y="14">BDN</text>
+  </g>
+</svg>

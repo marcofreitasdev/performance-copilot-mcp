@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <!-- Suppress MSBL001: Microsoft.Build.Framework transitively pulled in by
+         Microsoft.CodeAnalysis.Workspaces.MSBuild via PerformanceCopilot.Analysis.
+         MSBuildLocator.RegisterDefaults() handles runtime resolution at startup. -->
+    <NoWarn>$(NoWarn);MSBL001</NoWarn>
+  </PropertyGroup>
+</Project>
